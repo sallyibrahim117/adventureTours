@@ -1,0 +1,136 @@
+<app-navbar></app-navbar>
+<!-- start video -->
+<div class="position-relative">
+
+  <video  autoplay muted loop playsinline
+   id="my-video"
+   class="video-js w-100 h-100"
+   controls
+   preload="auto"
+
+
+   data-setup="{}">
+   <source src="assets/imgs/2.mp4" type="video/mp4" />
+  </video>
+  <div class="position-absolute top-50 start-50 translate-middle text-white ">
+<div class="text-center text-capitalize">
+
+  <h4 >find your special tour today</h4>
+  <h1 class="m-0">with adventure tours</h1>
+  <button type="button" class="btn viewBut text-white text-uppercase px-4 py-2 fs-5 mt-5"><i class="pi pi-eye me-1 fs-5"></i> view tours</button>
+</div>
+  </div>
+</div>
+
+
+<!-- end video -->
+<!--start popular tours setion -->
+<section class="tours">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-9 col-12">
+
+        <h1 class="text-uppercase py-4 title">why choose Us?</h1>
+        <div class="row ">
+          @for (item of arrOfElments(); track $index) {
+          <div class="col-md-4 col-12" >
+
+              <app-info [elements]="item"></app-info>
+            </div>
+          }
+        </div>
+      </div>
+      <div class="col-md-3 col-12">
+<div class="card rounded-0 mt-2 h-100 border-0 px-4 ">
+<h4 class="text-capitalize text text-white fw-normal text-center mt-4">search tours</h4>
+<p class="text-center text-white">Find your dream tour today!</p>
+<div class="input-group mb-3 ">
+  <input type="text" class="form-control border-0 search text-capitalize text-secondary " placeholder="Search Tour" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-text " id="basic-addon2"><i class="pi pi-search"></i></span>
+</div>
+<div class="input-group mb-3 ">
+  <input type="text" class="form-control border-0 search text-capitalize text-secondary " placeholder="Destination" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-text " id="basic-addon2"><i class="pi pi-map-marker"></i></span>
+</div>
+<div class="input-group mb-3 ">
+  <input type="text" class="form-control border-0 search text-capitalize text-secondary " placeholder="Tour Type" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-text " id="basic-addon2"><i class="pi pi-share-alt"></i></span>
+</div>
+<div class="input-group mb-3 ">
+  <input type="text" class="form-control border-0 search text-capitalize text-secondary " placeholder="Month" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-text " id="basic-addon2"><i class="pi pi-calendar"></i></span>
+</div>
+<button type="button" class="btn btn-primary text-uppercase rounded-0 py-2 fw-bold mb-2">find toures</button>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--end  popular tours setion -->
+<!--  start slider -->
+  <section class="slider ">
+<div class="container">
+  <div class="text-center p-5 txt2">
+    <h4 class="text-capitalize text txt fw-normal text-center mt-5">Take a Look at Our</h4>
+<h2 class="text-capitalize title ">Most Popular Tours</h2>
+  </div>
+  <app-popular-tours></app-popular-tours>
+  </div>
+  </section>
+<!--  end slider -->
+<!-- start destination -->
+ <div class="bg-white">
+  <div class="container">
+          <div class="text-center p-5 txt2">
+    <h4 class="text-capitalize text txt fw-normal text-center mt-5">Find a Tour by</h4>
+<h2 class="text-capitalize title ">Destination</h2>
+<hr>
+  </div>
+    <div class="row gy-4">
+      @for (item of arrOfImgs; track $index) {
+      <div class="col-lg-3 col-md-6 col-12">
+
+          <div class="position-relative myImg">
+            <img [src]="item.im" class="w-100" alt="">
+            <span class="position-absolute top-50 start-50 translate-middle text-capitalize text-white fw-bold fs-3">{{item.text}}</span>
+          </div>
+        </div>
+        }
+
+      </div>
+    </div>
+  </div>
+
+<!-- end destination -->
+
+<!--start contact -->
+<div class="contactSec mt-5 position-relative">
+<div class="position-absolute w-100 h-100 overlay" >
+   <div class="text-center txt2 d-flex flex-column h-100 justify-content-center">
+     <h3 class="text-capitalize title text-white">Join the Newsletter</h3>
+    <h5 class="text-capitalize text txt text-white fw-normal text-center ">To receive our best monthly deals</h5>
+<div class="w-100 d-flex justify-content-center mt-3">
+  <div class="row w-75 gy-3">
+    <div class="col-lg-9 col-12">
+<div class="w-100 ">
+
+  <input class="w-100 border-0 p-3" type="text" name="" id="" placeholder="Your email address">
+</div>
+    </div>
+    <div class="col-lg-3 col-12">
+      <div class="subscribe">
+
+        <button type="button" class="btn btn-success py-3 px-4 text-uppercase border-0 rounded-0">subscribe</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+</div>
+<!--end contact -->
+
+<!-- start footer -->
+<app-footer></app-footer>
+<!-- end footer -->

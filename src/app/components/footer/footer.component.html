@@ -1,0 +1,100 @@
+<footer>
+  <div class="container py-4">
+  <div class="row gy-4">
+    <div class="col-lg-3 col-md-6 col-12">
+<div >
+  <h5 class="text-uppercase text-white fw-bold">about Us</h5>
+  <p class="para mt-4">We are a small company based in San Francisco which delivers outstanding adventure travel experiences.</p>
+  <div class="w-25 mt-3 senbola">
+<a >
+
+  <img src="/assets/imgs/travel-awards.png" class="w-100" alt="">
+</a>
+  </div>
+</div>
+    </div>
+     <div class="col-lg-3 col-md-6 col-12">
+
+       <div class="">
+         <h5 class="text-uppercase text-white fw-bold">From the Blog</h5>
+         @for (item of arrOfBlogs(); track $index) {
+  <div class="row mb-3 mt-4">
+  <div class="col-lg-3 col-2 ">
+    <div>
+      <img [src]="item.img" class="rounded-circle w-100" alt="">
+    </div>
+  </div>
+  <div class="col-lg-9 col-10 ">
+    <div>
+      <h6 class="text-capitalize text-white">{{item.title}}</h6>
+      <small class="para">J{{item.desc}}</small>
+    </div>
+  </div>
+  </div>
+    @if ($index < arrOfBlogs().length - 1) {
+  <hr class="blog">
+    }
+}
+        </div>
+
+     </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div >
+         <h5 class="text-uppercase text-white fw-bold">latest tweets</h5>
+<p class="para mt-4">Please verify the settings in the Twitter widget.</p>
+        </div>
+      </div>
+       <div class="col-lg-3 col-md-6 col-12">
+        <div>
+                   <h5 class="text-uppercase text-white fw-bold">contact Us</h5>
+                   <ul class="mt-4">
+                    <li class="d-flex gap-2">
+                      <i class="pi pi-map-marker rounded-circle d-flex align-items-center justify-content-center border-0"></i>
+                      <small class="para ">777 Franklin St, San Francisco</small>
+                    </li>
+                      <li class="d-flex gap-2 mt-3">
+                      <i class="pi pi-phone rounded-circle d-flex align-items-center justify-content-center border-0"></i>
+                      <a class="link">
+
+                        <small class="text-white ">+1 420-240-6000</small>
+                      </a>
+                    </li>
+                      <li class="d-flex gap-1 mt-3">
+                      <i class="pi pi-envelope rounded-circle d-flex align-items-center justify-content-center border-0"></i>
+                      <a class="link">
+
+                        <small class="text-white ">contact&#64;adventuretours.com</small>
+                      </a>
+                    </li>
+                    <li class="d-flex gap-2 mt-3">
+                      <i class="pi pi-instagram rounded-circle d-flex align-items-center justify-content-center border-0"></i>
+                      <a class="link">
+
+                        <small class="text-white ">adventuretours</small>
+                      </a>
+                    </li>
+                   </ul>
+
+        </div>
+       </div>
+  </div>
+
+  <hr class="text-secondary mt-5">
+<div class="row">
+  <div class="col-md-7 col-sm-5 col-12">
+  <small class="text-secondary fw-light" style="font-size:12px">© 2021 Qode Interactive, All Rights Reserved</small>
+
+  </div>
+  <div class="col-md-5 col-sm-7 col-12">
+    <ul class="d-flex gap-2 justify-content-end">
+      <li><a ><img src="/assets/imgs/visa.png" alt=""></a></li>
+      <li><a ><img src="/assets/imgs/foot4.png" alt=""></a></li>
+      <li><a ><img src="/assets/imgs/foot6.png" alt=""></a></li>
+      <li><a ><img src="/assets/imgs/pay.png" alt=""></a></li>
+
+
+    </ul>
+</div>
+</div>
+</div>
+</footer>

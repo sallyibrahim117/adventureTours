@@ -1,0 +1,30 @@
+.card{
+  .box{
+    background-color: var(--blue-color);
+  }
+  .conten{
+    border-top: 2px solid var(--blue-color) !important;
+
+  }
+.image{
+  &:hover{
+    opacity: 0.7;
+  }
+}
+}
+::ng-deep{
+  .p-carousel-indicators{
+    display: none;
+  }
+  .p-carousel .p-carousel-content .p-carousel-prev,.p-carousel .p-carousel-content .p-carousel-next {
+    font-size: 25px !important;
+    width: 40px;
+  height: 40px;
+  }
+@media (min-width: 576px) {
+  .p-carousel-item{
+    margin-bottom: 15px;
+  }
+}
+
+}

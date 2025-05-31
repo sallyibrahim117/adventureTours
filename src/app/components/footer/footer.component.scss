@@ -1,0 +1,25 @@
+footer{
+background-color:var(--footerbg-color);
+.para{
+  color: var(--text-footer-color);
+}
+.blog{
+  border-bottom: dashed 1px var(--text-footer-color);
+
+}
+.pi{
+      width: 27px;
+    height: 28px;
+    background: #959da7;
+}
+.link{
+  &:hover{
+    border-bottom: dashed 1px var(--text-footer-color);
+  }
+}
+}
+@media (min-width: 576px) {
+  .senbola{
+        width: 60px !important;
+  }
+}

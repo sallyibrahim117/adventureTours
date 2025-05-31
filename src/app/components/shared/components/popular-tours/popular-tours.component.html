@@ -1,0 +1,68 @@
+
+
+<div class="container">
+
+    <p-carousel
+
+        [value]="allimgs()"
+        [numVisible]="4"
+        [numScroll]="3"
+        [circular]="false"
+        [autoplayInterval]="2000"
+        [responsiveOptions]="responsiveOptions">
+            <ng-template let-i pTemplate="item">
+
+
+                     <div class="card border-0 rounded-0 m-2">
+        <div class="position-relative image">
+
+          <img [src]="i.im" class="w-100" alt="">
+          <div class="position-absolute box bottom-0 end-0 p-2 text-white fw-bold fs-4">
+            {{i.price}}$
+          </div>
+
+        </div>
+
+        <div class=" conten p-4">
+          <h5 class="text-capitalize fw-bold"><a >{{i.name}}</a></h5>
+          <small class="text-secondary ">{{i.parag}}</small>
+        </div>
+
+      </div>
+
+
+            </ng-template>
+    </p-carousel>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- <div class="row">
+    <div class="col-4">
+
+      <div class="card border-0 rounded-0">
+        <div class="position-relative image">
+
+          <img src="/assets/imgs/1.jpg" class="w-100" alt="">
+          <div class="position-absolute box bottom-0 end-0 p-2 text-white fw-bold fs-4">
+            299$
+          </div>
+        </div>
+
+        <div class=" conten p-4">
+          <h5 class="text-capitalize fw-bold"><a >niagara falls</a></h5>
+          <small class="text-secondary ">Nullam. Facilisi tempus dignissim felis adipiscing vestibulum nam mollis faucibus</small>
+        </div>
+
+      </div>
+    </div>
+
+  </div> -->
+

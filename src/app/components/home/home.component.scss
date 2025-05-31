@@ -1,0 +1,90 @@
+.tours{
+//   background-image: url("/assets/imgs/most-popular-bg.jpg");
+//  background-position: bottom;
+//     height: 100vh;
+//     background-repeat: no-repeat;
+background-color: #f6f6f6;
+
+.card{
+  background-color: var(--blue-color);
+
+  .input-group-text {
+    color: #0000ff36;
+  }
+  .search{
+        font-size: 13px;
+            padding: 13px;
+
+  }
+}
+
+}
+.viewBut{
+  background: var(--blue-color);
+  letter-spacing: 3px;
+}
+.text{
+    font-family:"Lobster";
+  }
+  .title{
+  font-size: 42px;
+    font-weight: 600;
+    color: #000000c2;
+
+}
+.slider{
+    background-image: url("/assets/imgs/most-popular-bg.jpg");
+ background-position: bottom;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin-top: -40px;
+    .txt{
+      color: #00000042;
+    }
+    .txt2{
+      position: relative;
+     &::after {
+    position: absolute;
+
+    content: "";
+       width: 100px;
+    height: 5px;
+    background-color: var(--blue-color);
+
+  left: 50%;
+  transform: translateX(-50%);
+
+
+}
+    }
+}
+.myImg{
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+.contactSec{
+  background-image: url("/assets/imgs/mountain-river-optimized2.jpg");
+  height: 300px;
+  width: 100%;
+  .overlay{
+    background-color: var(--blue-color);
+    opacity: 0.8;
+  }
+}
+@media (min-width: 576px) {
+  .slider{
+    height: 100%;
+    .container{
+      margin-top: 30px;
+    }
+  }
+  .subscribe{
+    button{
+
+      width: 100%;
+    }
+  }
+
+}
