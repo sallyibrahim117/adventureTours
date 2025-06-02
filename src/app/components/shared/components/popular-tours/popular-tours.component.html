@@ -17,8 +17,13 @@
         <div class="position-relative image">
 
           <img [src]="i.im" class="w-100" alt="">
-          <div class="position-absolute box bottom-0 end-0 p-2 text-white fw-bold fs-4">
-            {{i.price}}$
+          <div class="position-absolute box bottom-0 end-0  text-white fw-bold fs-4">
+            <p class="p-2 m-0">
+<span [class.delete]="i.oldPrice">{{i.price}}$</span>
+@if (i.oldPrice) {
+  <span>{{i.oldPrice}}$</span>
+}
+            </p>
           </div>
 
         </div>

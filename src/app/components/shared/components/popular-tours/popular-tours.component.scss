@@ -11,6 +11,11 @@
     opacity: 0.7;
   }
 }
+.delete{
+  font-size: 12px;
+  text-decoration: line-through;
+  color: white;
+}
 }
 ::ng-deep{
   .p-carousel-indicators{

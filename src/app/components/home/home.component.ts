@@ -4,11 +4,12 @@ import { NavbarComponent } from "../navbar/navbar.component";
 import { InfoComponent } from "../shared/components/info/info.component";
 import { PopularToursComponent } from "../shared/components/popular-tours/popular-tours.component";
 import { FooterComponent } from "../footer/footer.component";
+import { DealsAndDiscountsComponent } from "../shared/components/deals-and-discounts/deals-and-discounts.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent, InfoComponent, PopularToursComponent, FooterComponent],
+  imports: [NavbarComponent, InfoComponent, PopularToursComponent, FooterComponent, DealsAndDiscountsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

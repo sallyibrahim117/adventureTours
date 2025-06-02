@@ -32,6 +32,12 @@ background-color: #f6f6f6;
     color: #000000c2;
 
 }
+.viewMoreBut{
+  opacity: 0.6;
+  &:hover{
+    opacity: .8;
+  }
+}
 .slider{
     background-image: url("/assets/imgs/most-popular-bg.jpg");
  background-position: bottom;

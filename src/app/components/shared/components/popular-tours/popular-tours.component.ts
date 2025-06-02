@@ -13,19 +13,19 @@ products:any[] | undefined;
     responsiveOptions: any[] | undefined;
 
    allimgs=signal<any[]>([{im:"/assets/imgs/1.jpg",name:"niagara falls",
-    parag:"Nullam. Facilisi tempus dignissim felis adipiscing vestibulum nam mollis faucibus",price:"299"}
+    parag:"Nullam. Facilisi tempus dignissim felis adipiscing vestibulum nam mollis faucibus",price:"299",oldPrice:"111"}
     ,
   {im:"/assets/imgs/2.jpg",name:"hot air balloning",
     parag:"Nullam. Facilisi tempus dignissim felis adipiscing vestibulum nam mollis faucibus",price:"8952"}
     ,
     {im:"/assets/imgs/3.jpg",name:"surfing",
-    parag:"Nullam. Facilisi tempus dignissim felis adipiscing vestibulum nam mollis faucibus",price:"258"}
+    parag:"Nullam. Facilisi tempus dignissim felis adipiscing vestibulum nam mollis faucibus",price:"258",oldPrice:"211"}
     ,
     {im:"/assets/imgs/4.jpg",name:"paragliding",
     parag:"Nullam. Facilisi tempus dignissim felis adipiscing vestibulum nam mollis faucibus",price:"957"}
      ,
     {im:"/assets/imgs/6.jpg",name:"rafting",
-    parag:"Nullam. Facilisi tempus dignissim felis adipiscing vestibulum nam mollis faucibus",price:"997"}
+    parag:"Nullam. Facilisi tempus dignissim felis adipiscing vestibulum nam mollis faucibus",price:"997",oldPrice:"811"}
      ,
     {im:"/assets/imgs/5.jpg",name:"niagara falls",
     parag:"Nullam. Facilisi tempus dignissim felis adipiscing vestibulum nam mollis faucibus",price:"107"}
